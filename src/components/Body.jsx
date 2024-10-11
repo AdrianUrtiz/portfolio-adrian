@@ -17,15 +17,16 @@ function Body() {
             src='/adrian.jpg'
             alt='adrian photo'
           />
-          <BadgeMovil>Disponible para trabajar</BadgeMovil>
-        </div>
-        <h1 className='text-3xl md:text-4xl lg:text-5xl font-semibold flex gap-x-4 pb-6'>
-          Hey, soy Adrian
           <a
             href='https://www.linkedin.com/in/adrian-urtiz-955aa0266/'
             target='_blank'
             rel='noopener noreferrer'
-            className='flex justify-center items-center'></a>
+            className='flex justify-center items-center'>
+            <BadgeMovil>Disponible para trabajar</BadgeMovil>
+          </a>
+        </div>
+        <h1 className='text-3xl md:text-4xl lg:text-5xl font-semibold flex gap-x-4 pb-6'>
+          Hey, soy Adrian
         </h1>
         <h2 className='text-lg md:text-xl opacity-80 text-wrap max-w-[750px]'>
           Junior Web Developer. De Morelia, Michoacán, México 🇲🇽 . Estudiante de

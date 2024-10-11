@@ -50,7 +50,7 @@ const Projects = () => {
                   )}
                   {project.link && (
                     <LinkButton href={project.link}>
-                      <Link className='size-2 ' />
+                      <Link className='size-3' />
                       Visitar
                     </LinkButton>
                   )}

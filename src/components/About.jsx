@@ -32,7 +32,7 @@ const About = () => {
       </div>
 
       <img
-        className='order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20'
+        className='order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-green-300/10 ring-1 ring-white/20'
         style={{ objectPosition: 50 + '% ' + 50 + '%' }}
         src='/adrian.webp'
         alt='adrian photo'

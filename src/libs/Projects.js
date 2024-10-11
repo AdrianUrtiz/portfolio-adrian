@@ -8,7 +8,7 @@ const PROJECTS = [
       'Desarrollo fullstack de un sistema de gestión de solicitudes de recursos para mujeres víctimas de violencia, utilizando tecnologías como Next.js, Tailwind CSS, PostgreSQL, Prisma, entre otras.',
 
     image: '/siprem.webp',
-    tags: [TAGS.NextJS, TAGS.React, TAGS.PostgreSQL, TAGS.Prisma],
+    tags: [TAGS.NextJS, TAGS.PostgreSQL, TAGS.Prisma, TAGS.React],
   },
   {
     id: 2,

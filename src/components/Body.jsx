@@ -51,21 +51,21 @@ function Body() {
       </Container>
 
       <Container id='projects'>
-        <h2 className='text-2xl font-medium mb-8 pt-8 flex gap-x-2 items-center'>
+        <h2 className='text-2xl font-medium mb-8 pt-24 flex gap-x-2 items-center'>
           <Forklift className='size-6' /> Proyectos
         </h2>
         <Projects />
       </Container>
 
       <Container id='experience'>
-        <h2 className='text-2xl font-medium mb-8 pt-8 flex gap-x-2 items-center'>
+        <h2 className='text-2xl font-medium mb-8 pt-24 flex gap-x-2 items-center'>
           <Code className='size-6' /> Experiencia Laboral
         </h2>
         <Experience />
       </Container>
 
       <Container id='about'>
-        <h2 className='text-2xl font-medium mb-8 pt-8 flex gap-x-2 items-center'>
+        <h2 className='text-2xl font-medium mb-8 pt-24 flex gap-x-2 items-center'>
           <User className='size-6' /> Sobre mí
         </h2>
         <About />

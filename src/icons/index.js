@@ -17,6 +17,8 @@ import NextJS from './NextJS'
 import Prisma from './Prisma'
 import PostgreSQL from './PostgreSQL'
 import Strapi from './Strapi'
+import Whatsapp from './Whatsapp'
+import Phone from './Phone'
 
 export {
   AmazonWebServices,
@@ -38,4 +40,6 @@ export {
   Prisma,
   PostgreSQL,
   Strapi,
+  Whatsapp,
+  Phone,
 }

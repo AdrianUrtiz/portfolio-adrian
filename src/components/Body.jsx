@@ -4,6 +4,7 @@ import SocialItem from './SocialItem'
 import About from './About'
 import Projects from './Projects'
 import Experience from './Experience'
+import Contact from './Contact'
 
 import { Code, Forklift, GitHub, LinkedIn, Mail, User } from '../icons'
 
@@ -70,6 +71,13 @@ function Body() {
           <User className='size-6' /> Sobre mí
         </h2>
         <About />
+      </Container>
+
+      <Container id='contact'>
+        <h2 className='text-2xl font-medium mb-8 pt-24 flex gap-x-2 items-center'>
+          <Mail className='size-6' /> Contacto
+        </h2>
+        <Contact />
       </Container>
     </main>
   )

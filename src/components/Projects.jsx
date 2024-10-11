@@ -26,7 +26,7 @@ const Projects = () => {
                 {project.title}
               </h3>
               <div className='flex flex-wrap mt-2'>
-                <ul className='flex flex-row mb-2 gap-x-2'>
+                <ul className='flex flex-row mb-2 gap-x-2 overflow-hidden max-w-full'>
                   {project.tags.map((tag) => (
                     <li key={tag.name}>
                       <span

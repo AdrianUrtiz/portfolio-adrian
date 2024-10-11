@@ -10,7 +10,7 @@ import { Code, Forklift, GitHub, LinkedIn, Mail, User } from '../icons'
 function Body() {
   return (
     <main className='px-4'>
-      <Container className='pt-20 md:pt-44 pb-24'>
+      <Container className='pt-20 md:pt-44'>
         <div className='flex gap-4 items-center mb-4'>
           <img
             className='rounded-full size-14'

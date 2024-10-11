@@ -45,13 +45,13 @@ const Projects = () => {
                   {project.github && (
                     <LinkButton href={project.github}>
                       <GitHub className='size-6' />
-                      Code
+                      Ver código
                     </LinkButton>
                   )}
                   {project.link && (
                     <LinkButton href={project.link}>
-                      <Link className='size-4' />
-                      Preview
+                      <Link className='size-2 ' />
+                      Visitar
                     </LinkButton>
                   )}
                 </footer>

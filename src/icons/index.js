@@ -13,6 +13,10 @@ import Mysql from './Mysql'
 import Php from './Php'
 import ReactJS from './ReactJS'
 import User from './User'
+import NextJS from './NextJS'
+import Prisma from './Prisma'
+import PostgreSQL from './PostgreSQL'
+import Strapi from './Strapi'
 
 export {
   AmazonWebServices,
@@ -30,4 +34,8 @@ export {
   Php,
   ReactJS,
   User,
+  NextJS,
+  Prisma,
+  PostgreSQL,
+  Strapi,
 }

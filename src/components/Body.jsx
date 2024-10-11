@@ -14,7 +14,7 @@ function Body() {
         <div className='flex gap-4 items-center mb-4'>
           <img
             className='rounded-full size-14'
-            src='/adrian.jpg'
+            src='/adrian.webp'
             alt='adrian photo'
           />
           <a

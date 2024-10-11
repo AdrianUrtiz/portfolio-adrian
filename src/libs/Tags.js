@@ -7,6 +7,10 @@ import {
   Mysql,
   Php,
   ReactJS,
+  NextJS,
+  Prisma,
+  PostgreSQL,
+  Strapi,
 } from '../icons'
 
 const TAGS = {
@@ -49,6 +53,26 @@ const TAGS = {
     name: 'AWS',
     className: 'bg-yellow-500/10',
     icon: AmazonWebServices,
+  },
+  NextJS: {
+    name: 'NextJS',
+    className: 'bg-green-500/10',
+    icon: NextJS,
+  },
+  Prisma: {
+    name: 'Prisma',
+    className: 'bg-blue-500/10',
+    icon: Prisma,
+  },
+  PostgreSQL: {
+    name: 'PostgreSQL',
+    className: 'bg-purple-500/10',
+    icon: PostgreSQL,
+  },
+  Strapi: {
+    name: 'Strapi',
+    className: 'bg-blue-500/10',
+    icon: Strapi,
   },
 }
 

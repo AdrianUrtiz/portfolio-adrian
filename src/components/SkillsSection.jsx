@@ -7,7 +7,7 @@ function SkillsSection() {
         skill.tags.map((tag) => (
           <span
             key={tag.name}
-            className={`text-base ${tag.className} py-3 px-4 rounded-xl flex items-center justify-center gap-2`}>
+            className={`text-sm md:text-base ${tag.className} py-3 px-4 rounded-xl flex items-center justify-center gap-2`}>
             <tag.icon className='size-4' />
             {tag.name}
           </span>

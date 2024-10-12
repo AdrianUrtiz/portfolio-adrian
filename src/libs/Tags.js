@@ -11,6 +11,7 @@ import {
   Prisma,
   PostgreSQL,
   Strapi,
+  Nodejs,
 } from '../icons'
 
 const TAGS = {
@@ -73,6 +74,11 @@ const TAGS = {
     name: 'Strapi',
     className: 'bg-blue-500/10',
     icon: Strapi,
+  },
+  Nodejs: {
+    name: 'Nodejs',
+    className: 'bg-green-500/10',
+    icon: Nodejs,
   },
 }
 

@@ -19,6 +19,9 @@ import PostgreSQL from './PostgreSQL'
 import Strapi from './Strapi'
 import Whatsapp from './Whatsapp'
 import Phone from './Phone'
+import Tools from './Tools'
+import Nodejs from './Nodejs'
+import Tailwind from './TailwindCSS'
 
 export {
   AmazonWebServices,
@@ -42,4 +45,7 @@ export {
   Strapi,
   Whatsapp,
   Phone,
+  Tools,
+  Nodejs,
+  Tailwind,
 }

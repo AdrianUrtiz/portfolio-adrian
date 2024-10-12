@@ -17,7 +17,7 @@ const PROJECTS = [
       'Desarrollo de una aplicación web para la División de Estudios de Posgrado e Investigación del Instituto Tecnológico de Morelia, así como su integración con el sistema de gestión de cursos y programas de la universidad, utilizando tecnologías como Next.js, Tailwind CSS, Strapi, entre otras.',
     link: 'https://depi.morelia.tecnm.mx/',
     image: '/depi.webp',
-    tags: [TAGS.NextJS, TAGS.Strapi, TAGS.Express],
+    tags: [TAGS.NextJS, TAGS.Strapi, TAGS.Express, TAGS.Nodejs],
   },
   {
     id: 3,

@@ -1,12 +1,15 @@
+import { useContext } from 'react'
 import GitHub from '../icons/GitHub'
 import Link from '../icons/Link'
 import LinkButton from './LinkButton'
 import PROJECTS from '../libs/Projects'
+import { LanguageContext } from '../context/LanguageContext'
 
 const Projects = () => {
+  const { translations } = useContext(LanguageContext)
   return (
     <div className='flex flex-col gap-y-14'>
-      {PROJECTS.map((project, index) => (
+      {PROJECTS(translations).map((project, index) => (
         <div key={project.id}>
           {index > 0 && <hr className='md:mb-10 border border-gray-700' />}
           <article
@@ -45,13 +48,13 @@ const Projects = () => {
                   {project.github && (
                     <LinkButton href={project.github}>
                       <GitHub className='size-6' />
-                      Ver código
+                      {translations.codeButton}
                     </LinkButton>
                   )}
                   {project.link && (
                     <LinkButton href={project.link}>
                       <Link className='size-3' />
-                      Visitar
+                      {translations.previewButton}
                     </LinkButton>
                   )}
                 </footer>

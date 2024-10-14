@@ -72,13 +72,13 @@ const Header = () => {
         </a>
         <a
           href='#experience'
-          className={`hover:text-green-300 ${activeItem === '#experience' ? 'text-green-300' : ''}`}
+          className={`hidden md:block hover:text-green-300 ${activeItem === '#experience' ? 'text-green-300' : ''}`}
           onClick={() => handleItemClick('#experience')}>
           {translations.navExperience}
         </a>
         <a
           href='#about'
-          className={`hidden md:block hover:text-green-300 ${activeItem === '#about' ? 'text-green-300' : ''}`}
+          className={`hover:text-green-300 ${activeItem === '#about' ? 'text-green-300' : ''}`}
           onClick={() => handleItemClick('#about')}>
           {translations.navAbout}
         </a>

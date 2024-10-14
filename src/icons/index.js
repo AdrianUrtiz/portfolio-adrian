@@ -22,6 +22,7 @@ import Phone from './Phone'
 import Tools from './Tools'
 import Nodejs from './Nodejs'
 import Tailwind from './TailwindCSS'
+import Translate from './Translate'
 
 export {
   AmazonWebServices,
@@ -48,4 +49,5 @@ export {
   Tools,
   Nodejs,
   Tailwind,
+  Translate,
 }

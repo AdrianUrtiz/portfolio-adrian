@@ -54,7 +54,7 @@ export const LANGUAGE = {
     navExperience: 'Experience',
     navAbout: 'About me',
     navContact: 'Contact',
-    badge: 'Hiring!',
+    badge: 'Available to work',
     title: "Hey, I'm Adrian",
     shortDescription:
       'Junior Web Developer. From Morelia, Michoacán, Mexico 🇲🇽 . Student of last year at the Instituto Tecnológico de Morelia with specialization in Software Engineering.',

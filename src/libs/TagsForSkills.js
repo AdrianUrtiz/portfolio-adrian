@@ -11,6 +11,11 @@ import {
   PostgreSQL,
   Strapi,
   Nodejs,
+  Git,
+  GitHub,
+  Linux,
+  Figma,
+  Postman,
 } from '../icons'
 
 const TAGS = {
@@ -86,6 +91,36 @@ const TAGS = {
       'bg-orange-500/10 text-white hover:bg-orange-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
     icon: AmazonWebServices,
   },
+  Git: {
+    name: 'Git',
+    className:
+      'bg-green-500/10 text-white hover:bg-green-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
+    icon: Git,
+  },
+  GitHub: {
+    name: 'GitHub',
+    className:
+      'bg-blue-500/10 text-white hover:bg-blue-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
+    icon: GitHub,
+  },
+  Linux: {
+    name: 'Linux',
+    className:
+      'bg-purple-500/10 text-white hover:bg-purple-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
+    icon: Linux,
+  },
+  Figma: {
+    name: 'Figma',
+    className:
+      'bg-pink-500/10 text-white hover:bg-pink-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
+    icon: Figma,
+  },
+  Postman: {
+    name: 'Postman',
+    className:
+      'bg-yellow-500/10 text-white hover:bg-yellow-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
+    icon: Postman,
+  },
 }
 
 const Skills = [
@@ -101,6 +136,10 @@ const Skills = [
   { id: 10, name: 'Strapi', tags: [TAGS.Strapi] },
   { id: 11, name: 'Firebase', tags: [TAGS.Firebase] },
   { id: 12, name: 'Amazon Web Services', tags: [TAGS.AWS] },
+  { id: 13, name: 'Git', tags: [TAGS.Git] },
+  { id: 14, name: 'Linux', tags: [TAGS.Linux] },
+  { id: 15, name: 'Figma', tags: [TAGS.Figma] },
+  { id: 16, name: 'Postman', tags: [TAGS.Postman] },
 ]
 
 export { Skills, TAGS }

@@ -23,6 +23,10 @@ import Tools from './Tools'
 import Nodejs from './Nodejs'
 import Tailwind from './TailwindCSS'
 import Translate from './Translate'
+import Git from './Git'
+import Linux from './Linux'
+import Figma from './Figma'
+import Postman from './Postman'
 
 export {
   AmazonWebServices,
@@ -50,4 +54,8 @@ export {
   Nodejs,
   Tailwind,
   Translate,
+  Git,
+  Linux,
+  Figma,
+  Postman,
 }

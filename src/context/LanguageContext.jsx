@@ -2,19 +2,22 @@ import { createContext } from 'react'
 import { useLanguage } from '../hooks/useLanguage'
 
 export const LanguageContext = createContext({
-  language: [],
+  language: '',
   changeLanguage: () => {},
-  translations: [],
+  translations: {},
+  isChanging: false,
 })
 
 export const LanguageProvider = ({ children }) => {
-  const { language, changeLanguage, translations } = useLanguage()
+  const { language, changeLanguage, translations, isChanging } = useLanguage()
+
   return (
     <LanguageContext.Provider
       value={{
-        language: language,
+        language,
         changeLanguage,
-        translations: translations,
+        translations,
+        isChanging,
       }}>
       {children}
     </LanguageContext.Provider>

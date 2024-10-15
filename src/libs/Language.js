@@ -6,7 +6,7 @@ export const LANGUAGE = {
     navAbout: 'Sobre mi',
     navContact: 'Contacto',
     badge: 'Disponible para trabajar',
-    title: 'Hey, soy Adrian',
+    title: 'Hey, soy Adrián',
     shortDescription:
       'Junior Web Developer. De Morelia, Michoacán, México 🇲🇽 . Estudiante de último año en Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Morelia con especialidad en Ingeniería de Software.',
     titleTools: 'Herramientas',
@@ -55,7 +55,7 @@ export const LANGUAGE = {
     navAbout: 'About me',
     navContact: 'Contact',
     badge: 'Available to work',
-    title: "Hey, I'm Adrian",
+    title: 'Hi, I am Adrián',
     shortDescription:
       'Junior Web Developer. From Morelia, Michoacán, Mexico 🇲🇽 . Student of last year at the Instituto Tecnológico de Morelia with specialization in Software Engineering.',
     titleTools: 'Tooling',

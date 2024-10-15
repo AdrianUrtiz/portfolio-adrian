@@ -7,7 +7,7 @@ import LinkButton from './LinkButton'
 import PROJECTS from '../libs/Projects'
 import { LanguageContext } from '../context/LanguageContext'
 
-const ProjectItem = ({ project, translations }) => {
+const ProjectItem = ({ project, translations, index }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -26,6 +26,7 @@ const ProjectItem = ({ project, translations }) => {
       animate={inView ? 'visible' : 'hidden'}
       variants={variants}
       transition={{ duration: 0.5 }}>
+      {index > 0 && <hr className='md:mb-14 border border-slate-200/15' />}
       <article className='flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0'>
         <div className='w-full md:w-1/2 order-2 md:order-1 mt-8 md:mt-0'>
           <div className='relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50'>
@@ -82,8 +83,9 @@ const Projects = () => {
 
   return (
     <div className='flex flex-col gap-y-14'>
-      {PROJECTS(translations).map((project) => (
+      {PROJECTS(translations).map((project, index) => (
         <ProjectItem
+          index={index}
           key={project.id}
           project={project}
           translations={translations}

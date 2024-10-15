@@ -57,7 +57,7 @@ function Presentation() {
     <>
       <div className='flex gap-4 items-center mb-12'>
         <img
-          className='rounded-full size-20'
+          className='rounded-full size-16 md:size-20'
           src='/adrian.webp'
           alt='adrian photo'
         />

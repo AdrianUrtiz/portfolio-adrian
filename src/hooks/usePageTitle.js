@@ -2,6 +2,9 @@ import { useEffect } from 'react'
 
 const usePageTitle = (blurTitle) => {
   useEffect(() => {
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent)
+    if (isMobile) return
+
     const prevTitle = document.title
 
     const handleBlur = () => {

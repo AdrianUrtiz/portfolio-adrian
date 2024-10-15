@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 const usePageTitle = (blurTitle) => {
   useEffect(() => {
-    const isMobile = /Mobi|Android/i.test(navigator.userAgent)
+    const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
     if (isMobile) return
 
     const prevTitle = document.title

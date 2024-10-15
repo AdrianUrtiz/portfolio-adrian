@@ -10,6 +10,8 @@ const ScrollReveal = ({ children }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           controls.start('visible')
+        } else {
+          controls.start('hidden')
         }
       },
       { threshold: 0.1 }

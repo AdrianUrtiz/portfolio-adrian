@@ -7,24 +7,30 @@ import Body from './components/Body'
 import LanguageTransition from './components/LanguageTransition'
 import ScrollReveal from './components/ScrollReveal'
 import { LanguageProvider, LanguageContext } from './context/LanguageContext'
+import useIsMobile from './hooks/useIsMobile' // Importar el hook
 
 function AppContent() {
   const { isChanging } = useContext(LanguageContext)
+  const isMobile = useIsMobile() // Usar el hook para detectar si es móvil
 
   return (
     <div className='flex flex-col min-h-screen'>
       <LanguageTransition isChanging={isChanging} />
       <BackgroundMain />
       <Header />
-      <ScrollReveal>
-        <Body />
-      </ScrollReveal>
-      <ScrollReveal>
-        <ButtonUp />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Footer />
-      </ScrollReveal>
+      {isMobile ? (
+        <>
+          <Body />
+        </>
+      ) : (
+        <>
+          <ScrollReveal>
+            <Body />
+          </ScrollReveal>
+        </>
+      )}
+      <ButtonUp />
+      <Footer />
     </div>
   )
 }

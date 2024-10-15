@@ -88,12 +88,12 @@ const Header = () => {
           onClick={() => handleItemClick('#contact')}>
           {translations.navContact}
         </a>
-        <a
+        <button
           onClick={toggleLanguage}
           className='hover:text-green-300 flex gap-x-1 items-center cursor-pointer bg-slate-700/50 hover:bg-slate-800/50 p-2 rounded-lg shadow-lg'>
           <Translate className='size-4' />
           {language === 'Spannish' ? 'English' : 'Español'}
-        </a>
+        </button>
       </nav>
     </header>
   )

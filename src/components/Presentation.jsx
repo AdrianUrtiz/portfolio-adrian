@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import BadgeMovil from './BadgeMovil'
 import SocialItem from './SocialItem'
-import { GitHub, LinkedIn, Mail } from '../icons'
+import { GitHub, LinkedIn, Mail, Download } from '../icons'
 import { LanguageContext } from '../context/LanguageContext'
 
 const typingEffect = {
@@ -93,24 +93,31 @@ function Presentation() {
       </motion.h2>
 
       <motion.nav
-        className='flex flex-wrap gap-4 mt-6'
+        className='flex flex-wrap gap-2 md:gap-4 mt-6'
         initial='hidden'
         animate={showNav ? 'visible' : 'hidden'}
         variants={navEffect}
         transition={{ duration: 0.8 }}>
         <SocialItem
           href={'https://www.linkedin.com/in/adrian-urtiz-955aa0266/'}>
-          <LinkedIn className='size-4 lg:size-6' />
+          <LinkedIn className='size-3 lg:size-4' />
           LinkedIn
         </SocialItem>
         <SocialItem href={'https://github.com/AdrianUrtiz'}>
-          <GitHub className='size-4 lg:size-6' />
+          <GitHub className='size-3 lg:size-4' />
           GitHub
         </SocialItem>
         <SocialItem href={'mailto: aeurtiz17@gmail.com'}>
-          <Mail className='size-4 lg:size-6' />
+          <Mail className='size-3 lg:size-4' />
           Email
         </SocialItem>
+        <a
+          className='rounded-lg border border-white/10 flex justify-center items-center gap-x-2 py-1 px-2 lg:py-2 lg:px-4 text-xs md:text-sm bg-white/5 hover:bg-white/10 hover:scale-105 transition-transform duration-300 ease-in-out'
+          href='/CV Adrian Eduardo Urtiz Parra.pdf'
+          download>
+          <Download className='size-3 lg:size-4' />
+          {translations.download}
+        </a>
       </motion.nav>
     </>
   )

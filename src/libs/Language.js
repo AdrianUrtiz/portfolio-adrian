@@ -9,6 +9,7 @@ export const LANGUAGE = {
     title: 'Hey, soy Adrián',
     shortDescription:
       'Junior Web Developer. De Morelia, Michoacán, México 🇲🇽 . Estudiante de último año en Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Morelia con especialidad en Ingeniería de Software.',
+    download: 'Descargar CV',
     titleTools: 'Herramientas',
     titleProjects: 'Proyectos',
     TextSIPREM:
@@ -58,6 +59,7 @@ export const LANGUAGE = {
     title: 'Hi, I am Adrián',
     shortDescription:
       'Junior Web Developer. From Morelia, Michoacán, Mexico 🇲🇽 . Student of last year at the Instituto Tecnológico de Morelia with specialization in Software Engineering.',
+    download: 'Download CV',
     titleTools: 'Tooling',
     titleProjects: 'Projects',
     TextSIPREM:

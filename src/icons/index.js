@@ -27,6 +27,7 @@ import Git from './Git'
 import Linux from './Linux'
 import Figma from './Figma'
 import Postman from './Postman'
+import Download from './Download'
 
 export {
   AmazonWebServices,
@@ -58,4 +59,5 @@ export {
   Linux,
   Figma,
   Postman,
+  Download,
 }

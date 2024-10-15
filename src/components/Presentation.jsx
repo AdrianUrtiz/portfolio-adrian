@@ -55,9 +55,9 @@ function Presentation() {
 
   return (
     <>
-      <div className='flex gap-4 items-center mb-4'>
+      <div className='flex gap-4 items-center mb-12'>
         <img
-          className='rounded-full size-14'
+          className='rounded-full size-20'
           src='/adrian.webp'
           alt='adrian photo'
         />
@@ -112,7 +112,7 @@ function Presentation() {
           Email
         </SocialItem>
         <a
-          className='rounded-lg border border-white/10 flex justify-center items-center gap-x-2 py-1 px-2 lg:py-2 lg:px-4 text-xs md:text-sm bg-white/5 hover:bg-white/10 hover:scale-105 transition-transform duration-300 ease-in-out'
+          className='rounded-xl border border-white/10 flex justify-center items-center gap-x-2 py-1 px-2 lg:py-2 lg:px-4 text-sm md:text-base bg-white/5 hover:bg-white/10 hover:scale-105 transition-transform duration-300 ease-in-out'
           href='/CV Adrian Eduardo Urtiz Parra.pdf'
           download>
           <Download className='size-3 lg:size-4' />

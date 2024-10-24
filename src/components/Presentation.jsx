@@ -32,7 +32,7 @@ const fadeInScaleEffect = {
 }
 
 function Presentation() {
-  const { translations } = useContext(LanguageContext)
+  const { translations, language } = useContext(LanguageContext)
   const [startDescription, setStartDescription] = useState(false)
   const [showNav, setShowNav] = useState(false)
 
@@ -52,6 +52,11 @@ function Presentation() {
     }, delay * 1000)
     return () => clearTimeout(timer)
   }, [])
+
+  const pdfToDownload =
+    language === 'Spannish'
+      ? '/Adrian Eduardo Urtiz Parra - es.pdf'
+      : '/Adrian Eduardo Urtiz Parra - en.pdf'
 
   return (
     <>
@@ -111,7 +116,7 @@ function Presentation() {
           <Mail className='size-3 lg:size-4' />
           Email
         </SocialItem>
-        <SocialItem href='/CV Adrian Eduardo Urtiz Parra.pdf' download={true}>
+        <SocialItem href={pdfToDownload} download={true}>
           <Download className='size-3 lg:size-4' />
           {translations.download}
         </SocialItem>

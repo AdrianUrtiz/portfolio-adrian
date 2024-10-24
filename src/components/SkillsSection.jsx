@@ -21,7 +21,7 @@ function SkillsSection() {
   }, [])
 
   return (
-    <div className='w-[95%] rounded-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 p-4'>
+    <div className='w-full rounded-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 p-4'>
       {Skills.map((skill) =>
         skill.tags.map((tag) => (
           <motion.div

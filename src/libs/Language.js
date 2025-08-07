@@ -8,7 +8,7 @@ export const LANGUAGE = {
     badge: 'Disponible para trabajar',
     title: 'Hey, soy Adrián',
     shortDescription:
-      'Junior Web Developer. De Morelia, Michoacán, México 🇲🇽 . Estudiante de último año en Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Morelia con especialidad en Ingeniería de Software.',
+      'Junior Web Developer. De Morelia, Michoacán, México 🇲🇽 . Egresado de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Morelia con especialidad en Ingeniería de Software.',
     download: 'Descargar CV',
     titleTools: 'Herramientas',
     titleProjects: 'Proyectos',
@@ -25,29 +25,32 @@ export const LANGUAGE = {
     TextVivel:
       'Participación en el desarrollo de una plataforma de educación en línea, contacto directo con el cliente para la definición de requerimientos y desarrollo de la interfaz de usuario. Utilizando tecnologías como CodeIgniter, MySQL, HTML, CSS, entre otras.',
     titleExperience: 'Experiencia Laboral',
-    dateITM: 'Agosto 2019 - Presente',
-    TextExperienceITM:
-      'Estudiante de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Morelia con especialidad en Ingeniería de Software. Participación en el desarrollo de proyectos de software a través de la Fábrica Académica de Software.',
-    dateCG: 'Septiembre 2016 - Febrero 2022',
-    TextExperienceCG:
-      'Encargado de tienda, atención al cliente, manejo de inventario, seguimiento personalizado a clientes especiales, ventas, efectivo, gestionar pedidos, entre otras actividades relacionadas con la ferretería.',
-    dateContigo: 'Octubre 2015 - Agosto 2016',
-    TextExperienceContigo:
-      'Brindar atención financiera a los clientes, desarrollar estrategias de credito personalizadas, gestionar cartera de créditos, mantener relaciones con clientes, entre otras actividades.',
+    dateHarman: 'Enero 2025 - Julio 2025',
+    titleHarman: 'Practicante en desarrollo de software – Harman International, Querétaro',
+    TextExperienceHarman:
+      'Desarrollo de módulo de inventario digital, manejo de jerarquía de zonas en árbol, registros de entradas y salidas de material, ajustes de inventario, consulta de existencias, uso de SFC y número de parte para ingresos, seguimiento mensual de avances, trabajo en equipo con ingenieros de manufactura, programación en Symfony, manejo de base de datos MySQL, entre otras actividades relacionadas con el control de inventario.',
+    dateFAS: 'Agosto 2022 - Diciembre 2025',
+    titleFAS: 'Trainee Developer – Fábrica Académica de Software, Morelia',
+    TextExperienceFAS:
+      'Participación en proyectos reales para instituciones públicas y privadas, desarrollo de sistemas web, trabajo en equipo multidisciplinario, análisis de requerimientos, diseño de interfaces, desarrollo frontend y backend, uso de metodologías ágiles, aplicación de buenas prácticas de desarrollo, entre otras actividades relacionadas con el ciclo completo de desarrollo de software.',
     titleAbout: 'Sobre mí',
     paragraph1:
-      'Adrián Eduardo Urtiz Parra - <strong>Desarrollador de Software</strong>',
+      'Adrián Eduardo Urtiz Parra – <strong>Desarrollador de Software</strong>.',
     paragraph2:
-      'Mi pasión por la programación comenzó a los 16 años durante la preparatoria, y desde entonces he estado inmerso en el desarrollo de software. Actualmente, formo parte de los equipos de la <strong>Fábrica Académica de Software</strong>, donde colaboro en proyectos innovadores y desafiantes que me han permitido fortalecer mis habilidades técnicas y de trabajo en equipo.',
+      'Mi interés por la programación comenzó a los 16 años y desde entonces he trabajado en diversos proyectos que han fortalecido mis habilidades técnicas, de análisis y colaboración. He formado parte de la <strong>Fábrica Académica de Software</strong>, donde participé en el desarrollo de sistemas reales para instituciones públicas y privadas.',
     paragraph3:
-      'Además, mi experiencia como <strong>desarrollador web freelance</strong> me ha dado la oportunidad de trabajar en entornos diversos, adaptándome a distintos requerimientos de proyectos y ampliando mis conocimientos en el ámbito del desarrollo web.',
+      'Como <strong>desarrollador web freelance</strong>, he creado soluciones a medida para distintos clientes, lo que me ha permitido adaptarme a diferentes retos, tecnologías y metodologías de trabajo.',
     paragraph4:
-      'Estoy próximo a graduarme en <strong>Ingeniería en Sistemas Computacionales</strong> en el <strong>Instituto Tecnológico de Morelia</strong>, con una especialización en <strong>Ingeniería de Software</strong>. A lo largo de mi carrera académica y profesional, he adquirido competencias valiosas en programación, gestión de proyectos y trabajo en equipo. Estoy comprometido con el aprendizaje continuo y la mejora constante, siempre buscando nuevas oportunidades para crecer y aportar en este apasionante campo.',
+      'Realicé mis residencias profesionales en <strong>Harman International</strong>, donde desarrollé un módulo de inventario digital, colaborando con ingenieros tanto de manufactura como otros desarrolladores, aplicando buenas prácticas de desarrollo.',
+    paragraph5:
+      'Estoy en proceso de titulación en <strong>Ingeniería en Sistemas Computacionales</strong> por el <strong>Instituto Tecnológico de Morelia</strong>, con especialización en <strong>Ingeniería de Software</strong>. Me caracterizo por mi compromiso con el aprendizaje continuo, la mejora constante y la pasión por crear soluciones que generen impacto.',
     titleContact: 'Contacto',
     contactPhone: 'Télefono',
     footer: 'Casi todos los derechos reservados.',
     previewButton: 'Visitar',
     codeButton: 'Ver código',
+    seeMoreButton: 'Mostrar más',
+    showLessButton: 'Mostrar menos',
   },
   English: {
     navHome: 'Home',
@@ -58,7 +61,7 @@ export const LANGUAGE = {
     badge: 'Available to work',
     title: 'Hi, I am Adrián',
     shortDescription:
-      'Junior Web Developer. From Morelia, Michoacán, Mexico 🇲🇽 . Student of last year at the Instituto Tecnológico de Morelia with specialization in Software Engineering.',
+      'Junior Web Developer. From Morelia, Michoacán, Mexico 🇲🇽. Graduate in Computer Systems Engineering from Instituto Tecnológico de Morelia, specialized in Software Engineering.',
     download: 'Download CV',
     titleTools: 'Tooling',
     titleProjects: 'Projects',
@@ -75,28 +78,31 @@ export const LANGUAGE = {
     TextVivel:
       'Participation in the development of an online education platform, direct contact with the client for the definition of requirements and development of the user interface. Using technologies such as CodeIgniter, MySQL, HTML, CSS, among others.',
     titleExperience: 'Work Experience',
-    dateITM: 'August 2019 - Present',
-    TextExperienceITM:
-      'Student of Computer Systems Engineering at the Instituto Tecnológico de Morelia with a specialization in Software Engineering. Participation in the development of software projects through the Academic Software Factory.',
-    dateCG: 'September 2016 - February 2022',
-    TextExperienceCG:
-      'Store manager, customer service, inventory management, personalized follow-up to special clients, sales, cash, order management, among other activities related to the hardware store.',
-    dateContigo: 'October 2015 - August 2016',
-    TextExperienceContigo:
-      'Provide financial assistance to clients, develop personalized credit strategies, manage credit portfolios, maintain customer relationships, among other activities.',
-    titleAbout: 'About',
+    dateHarman: 'January 2025 - July 2025',
+    titleHarman: 'Software Development Intern – Harman International, Querétaro',
+    TextExperienceHarman:
+      'Development of a digital inventory module, management of zone hierarchy using tree structure, recording of material entries and exits, inventory adjustments, stock queries, use of SFC and part number for incoming items, monthly progress tracking, teamwork with manufacturing engineers, programming in Symfony, MySQL database management, among other activities related to inventory control.',
+    dateFAS: 'August 2022 - December 2025',
+    titleFAS: 'Trainee Developer – Academic Software Factory, Morelia',
+    TextExperienceFAS:
+      'Participation in real-world projects for public and private institutions, web system development, collaboration in multidisciplinary teams, requirements analysis, UI design, frontend and backend development, use of agile methodologies, application of best development practices, among other activities related to the full software development lifecycle.',
+    titleAbout: 'About Me',
     paragraph1:
-      'Adrián Eduardo Urtiz Parra - <strong>Software Developer</strong>',
+      'Adrián Eduardo Urtiz Parra – <strong>Software Developer</strong>.',
     paragraph2:
-      'My passion for programming began at the age of 16 during high school, and since then I have been immersed in software development. Currently, I am part of the teams at the <strong>Academic Software Factory</strong>, where I collaborate on innovative and challenging projects that have allowed me to strengthen my technical and teamwork skills.',
+      'My interest in programming began at the age of 16, and since then I have worked on various projects that have strengthened my technical, analytical, and collaboration skills. I have been part of the <strong>Academic Software Factory</strong>, where I contributed to the development of real-world systems for both public and private institutions.',
     paragraph3:
-      'Additionally, my experience as a <strong>freelance web developer</strong> has given me the opportunity to work in diverse environments, adapting to different project requirements and expanding my knowledge in the field of web development.',
+      'As a <strong>freelance web developer</strong>, I have created custom solutions for different clients, which has allowed me to adapt to various challenges, technologies, and work methodologies.',
     paragraph4:
-      'I am about to graduate in <strong>Computer Systems Engineering</strong> at the <strong>Instituto Tecnológico de Morelia</strong>, with a specialization in <strong>Software Engineering</strong>. Throughout my academic and professional career, I have acquired valuable skills in programming, project management, and teamwork. I am committed to continuous learning and constant improvement, always seeking new opportunities to grow and contribute in this exciting field.',
+      'I completed my professional internship at <strong>Harman International</strong>, where I developed a digital inventory module, collaborating with both manufacturing engineers and other developers while applying best development practices.',
+    paragraph5:
+      'I am currently in the process of obtaining my degree in <strong>Computer Systems Engineering</strong> from the <strong>Instituto Tecnológico de Morelia</strong>, with a specialization in <strong>Software Engineering</strong>. I am committed to continuous learning, constant improvement, and passionate about creating impactful solutions.',
     titleContact: 'Contact',
     contactPhone: 'Phone',
     footer: 'Almost all rights reserved.',
     previewButton: 'Preview',
     codeButton: 'View Code',
+    seeMoreButton: 'See More',
+    showLessButton: 'Show Less',
   },
 }

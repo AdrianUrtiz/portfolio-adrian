@@ -1,18 +1,13 @@
 const EXPERIENCE = (translations) => [
   {
-    date: translations.dateITM,
-    title: 'Instituto Tecnológico de Morelia',
-    description: translations.TextExperienceITM,
+    date: translations.dateHarman,
+    title: translations.titleHarman,
+    description: translations.TextExperienceHarman,
   },
   {
-    date: translations.dateCG,
-    title: 'Ferretería CG, Pátzcuaro, Michoacán',
-    description: translations.TextExperienceCG,
-  },
-  {
-    date: translations.dateContigo,
-    title: 'Financiera Contigo, Pátzcuaro, Michoacán',
-    description: translations.TextExperienceContigo,
+    date: translations.dateFAS,
+    title: translations.titleFAS,
+    description: translations.TextExperienceFAS,
   },
 ]
 

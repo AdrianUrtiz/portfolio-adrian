@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import GitHub from '../icons/GitHub'
@@ -80,10 +80,13 @@ const ProjectItem = ({ project, translations, index }) => {
 
 const Projects = () => {
   const { translations } = useContext(LanguageContext)
+  const [showAll, setShowAll] = useState(false)
+  const projects = PROJECTS(translations)
+  const visibleProjects = showAll ? projects : projects.slice(0, 3)
 
   return (
     <div className='flex flex-col gap-y-14'>
-      {PROJECTS(translations).map((project, index) => (
+      {visibleProjects.map((project, index) => (
         <ProjectItem
           index={index}
           key={project.id}
@@ -91,6 +94,16 @@ const Projects = () => {
           translations={translations}
         />
       ))}
+      {projects.length > 3 && (
+        <button
+          className={`self-end group flex items-center justify-center px-4 py-2 mt-4 text-sm font-semibold text-gray-400 border-2 border-gray-400 bg-black/10 backdrop-blur rounded-lg hover:scale-105 transition cursor-pointer`}
+          onClick={() => setShowAll(!showAll)}
+        >
+          {showAll
+            ? translations.showLessButton
+            : translations.seeMoreButton}
+        </button>
+      )}
     </div>
   )
 }

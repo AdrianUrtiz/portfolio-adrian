@@ -32,6 +32,7 @@ const About = () => {
         <p dangerouslySetInnerHTML={{ __html: translations.paragraph2 }}></p>
         <p dangerouslySetInnerHTML={{ __html: translations.paragraph3 }}></p>
         <p dangerouslySetInnerHTML={{ __html: translations.paragraph4 }}></p>
+        <p dangerouslySetInnerHTML={{ __html: translations.paragraph5 }}></p>
       </div>
 
       <motion.img

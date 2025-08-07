@@ -26,8 +26,8 @@ const Header = () => {
 
       const sections = [
         '#top',
-        '#projects',
         '#experience',
+        '#projects',
         '#about',
         '#contact',
       ]
@@ -57,7 +57,7 @@ const Header = () => {
   return (
     <header
       className={`flex justify-center items-center fixed top-0 left-0 w-full z-40 p-3 transition-all duration-300 ${isBlurred ? 'backdrop-blur-md bg-slate-900/40' : ''}`}>
-      <nav className='flex flex-row items-center gap-x-3 md:gap-x-10 opacity-80 text-xs md:text-base'>
+      <nav className='flex flex-row items-center gap-x-3 md:gap-x-10 opacity-80 text-xs md:text-base text-white'>
         <a
           href='#top'
           className={`hidden md:block hover:text-green-300 ${activeItem === '#top' ? 'text-green-300' : ''}`}
@@ -65,16 +65,16 @@ const Header = () => {
           {translations.navHome}
         </a>
         <a
-          href='#projects'
-          className={`hover:text-green-300 ${activeItem === '#projects' ? 'text-green-300' : ''}`}
-          onClick={() => handleItemClick('#projects')}>
-          {translations.navProjects}
-        </a>
-        <a
           href='#experience'
           className={`hidden md:block hover:text-green-300 ${activeItem === '#experience' ? 'text-green-300' : ''}`}
           onClick={() => handleItemClick('#experience')}>
           {translations.navExperience}
+        </a>
+        <a
+          href='#projects'
+          className={`hover:text-green-300 ${activeItem === '#projects' ? 'text-green-300' : ''}`}
+          onClick={() => handleItemClick('#projects')}>
+          {translations.navProjects}
         </a>
         <a
           href='#about'

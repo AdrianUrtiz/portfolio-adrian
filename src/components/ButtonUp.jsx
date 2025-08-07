@@ -27,7 +27,7 @@ function ButtonUp() {
 
   return (
     <div
-      className={`fixed bottom-2 right-2 transition-opacity ${
+      className={`fixed bottom-2 right-2 transition-opacity text-white ${
         isVisible ? '' : 'opacity-0'
       }`}>
       <button

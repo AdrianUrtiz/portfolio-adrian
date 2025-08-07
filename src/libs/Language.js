@@ -29,7 +29,7 @@ export const LANGUAGE = {
     titleHarman: 'Practicante en desarrollo de software – Harman International, Querétaro',
     TextExperienceHarman:
       'Desarrollo de módulo de inventario digital, manejo de jerarquía de zonas en árbol, registros de entradas y salidas de material, ajustes de inventario, consulta de existencias, uso de SFC y número de parte para ingresos, seguimiento mensual de avances, trabajo en equipo con ingenieros de manufactura, programación en Symfony, manejo de base de datos MySQL, entre otras actividades relacionadas con el control de inventario.',
-    dateFAS: 'Agosto 2022 - Diciembre 2025',
+    dateFAS: 'Agosto 2022 - Diciembre 2024',
     titleFAS: 'Trainee Developer – Fábrica Académica de Software, Morelia',
     TextExperienceFAS:
       'Participación en proyectos reales para instituciones públicas y privadas, desarrollo de sistemas web, trabajo en equipo multidisciplinario, análisis de requerimientos, diseño de interfaces, desarrollo frontend y backend, uso de metodologías ágiles, aplicación de buenas prácticas de desarrollo, entre otras actividades relacionadas con el ciclo completo de desarrollo de software.',
@@ -82,7 +82,7 @@ export const LANGUAGE = {
     titleHarman: 'Software Development Intern – Harman International, Querétaro',
     TextExperienceHarman:
       'Development of a digital inventory module, management of zone hierarchy using tree structure, recording of material entries and exits, inventory adjustments, stock queries, use of SFC and part number for incoming items, monthly progress tracking, teamwork with manufacturing engineers, programming in Symfony, MySQL database management, among other activities related to inventory control.',
-    dateFAS: 'August 2022 - December 2025',
+    dateFAS: 'August 2022 - December 2024',
     titleFAS: 'Trainee Developer – Academic Software Factory, Morelia',
     TextExperienceFAS:
       'Participation in real-world projects for public and private institutions, web system development, collaboration in multidisciplinary teams, requirements analysis, UI design, frontend and backend development, use of agile methodologies, application of best development practices, among other activities related to the full software development lifecycle.',

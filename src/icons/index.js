@@ -25,9 +25,8 @@ import Tailwind from './TailwindCSS'
 import Translate from './Translate'
 import Git from './Git'
 import Linux from './Linux'
-import Figma from './Figma'
-import Postman from './Postman'
 import Download from './Download'
+import Symfony from './Symfony'
 
 export {
   AmazonWebServices,
@@ -57,7 +56,6 @@ export {
   Translate,
   Git,
   Linux,
-  Figma,
-  Postman,
   Download,
+  Symfony,
 }

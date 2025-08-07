@@ -14,8 +14,8 @@ import {
   Git,
   GitHub,
   Linux,
-  Figma,
-  Postman,
+  Php,
+  Symfony,
 } from '../icons'
 
 const TAGS = {
@@ -109,17 +109,17 @@ const TAGS = {
       'bg-purple-500/10 text-white hover:bg-purple-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
     icon: Linux,
   },
-  Figma: {
-    name: 'Figma',
+  PHP: {
+    name: 'PHP',
     className:
       'bg-pink-500/10 text-white hover:bg-pink-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
-    icon: Figma,
+    icon: Php,
   },
-  Postman: {
-    name: 'Postman',
+  Symfony: {
+    name: 'Symfony',
     className:
       'bg-yellow-500/10 text-white hover:bg-yellow-500/30 hover:scale-105 transition-transform duration-300 ease-in-out',
-    icon: Postman,
+    icon: Symfony,
   },
 }
 
@@ -138,8 +138,8 @@ const Skills = [
   { id: 12, name: 'Amazon Web Services', tags: [TAGS.AWS] },
   { id: 13, name: 'Git', tags: [TAGS.Git] },
   { id: 14, name: 'Linux', tags: [TAGS.Linux] },
-  { id: 15, name: 'Figma', tags: [TAGS.Figma] },
-  { id: 16, name: 'Postman', tags: [TAGS.Postman] },
+  { id: 15, name: 'PHP', tags: [TAGS.PHP] },
+  { id: 16, name: 'Symfony', tags: [TAGS.Symfony] },
 ]
 
 export { Skills, TAGS }

@@ -7,7 +7,7 @@ export function Experience() {
 
   return (
     <Section
-      id="experiencia"
+      id="experience"
       eyebrow={messages.experience.eyebrow}
       title={messages.experience.title}
     >

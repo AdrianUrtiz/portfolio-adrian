@@ -8,7 +8,7 @@ export function Projects() {
 
   return (
     <Section
-      id="proyectos"
+      id="projects"
       eyebrow={messages.projects.eyebrow}
       title={messages.projects.title}
       description={messages.projects.description}

@@ -6,12 +6,12 @@ export const messages = {
     navbar: {
       brand: "dev.",
       links: [
-        { href: "#inicio", label: "Inicio" },
+        { href: "#hero", label: "Inicio" },
         { href: "#stack", label: "Herramientas" },
-        { href: "#experiencia", label: "Experiencia" },
-        { href: "#proyectos", label: "Proyectos" },
+        { href: "#experience", label: "Experiencia" },
+        { href: "#projects", label: "Proyectos" },
         { href: "#about", label: "Sobre mí" },
-        { href: "#contacto", label: "Contacto" },
+        { href: "#contact", label: "Contacto" },
       ],
       switchLabel: "English",
       switchAriaLabel: "Cambiar idioma a inglés",
@@ -211,12 +211,12 @@ export const messages = {
     navbar: {
       brand: "dev.",
       links: [
-        { href: "#inicio", label: "Home" },
+        { href: "#hero", label: "Home" },
         { href: "#stack", label: "Tools" },
-        { href: "#experiencia", label: "Experience" },
-        { href: "#proyectos", label: "Projects" },
+        { href: "#experience", label: "Experience" },
+        { href: "#projects", label: "Projects" },
         { href: "#about", label: "About" },
-        { href: "#contacto", label: "Contact" },
+        { href: "#contact", label: "Contact" },
       ],
       switchLabel: "Español",
       switchAriaLabel: "Switch language to Spanish",

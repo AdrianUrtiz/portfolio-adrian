@@ -10,7 +10,7 @@ export function Hero() {
 
   return (
     <section
-      id="inicio"
+      id="hero"
       className="relative min-h-screen flex items-center overflow-hidden bg-hero"
     >
       <div className="absolute inset-0 grid-bg" aria-hidden />
@@ -40,7 +40,7 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="#proyectos"
+              href="#projects"
               className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:bg-primary-glow transition-colors shadow-glow"
             >
               <Sparkles className="size-4" /> {messages.hero.primaryCta}

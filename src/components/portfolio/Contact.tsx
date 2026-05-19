@@ -8,7 +8,7 @@ export function Contact() {
 
   return (
     <Section
-      id="contacto"
+      id="contact"
       eyebrow={messages.contact.eyebrow}
       title={messages.contact.title}
       description={messages.contact.description}

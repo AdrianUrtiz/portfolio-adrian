@@ -1,6 +1,6 @@
 import { Section } from "./Section";
 import { Coffee, Globe, Rocket } from "lucide-react";
-import { useI18n } from "@/i18n/I18nProvider";
+import { useI18n } from "@/i18n/useI18n";
 
 const factIcons = [Rocket, Globe, Coffee];
 

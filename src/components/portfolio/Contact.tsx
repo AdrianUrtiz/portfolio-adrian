@@ -1,7 +1,7 @@
 import { Section } from "./Section";
 import { Mail, Send } from "lucide-react";
 import { Github, Linkedin } from "@/components/Icons";
-import { useI18n } from "@/i18n/I18nProvider";
+import { useI18n } from "@/i18n/useI18n";
 
 export function Contact() {
   const { messages } = useI18n();

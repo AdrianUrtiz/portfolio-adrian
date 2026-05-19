@@ -1,26 +1,8 @@
-/* eslint-disable react-refresh/only-export-components */
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type ReactNode,
-} from "react";
-import { messages, type Locale, type Messages } from "./messages";
-
-type I18nContextValue = {
-  locale: Locale;
-  setLocale: (locale: Locale) => void;
-  toggleLocale: () => void;
-  isChangingLanguage: boolean;
-  messages: Messages;
-};
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { messages, type Locale } from "./messages";
+import { I18nContext } from "./useI18n";
 
 const STORAGE_KEY = "portfolio-locale";
-
-const I18nContext = createContext<I18nContextValue | null>(null);
 
 function getInitialLocale(): Locale {
   if (typeof window === "undefined") return "es";
@@ -79,14 +61,3 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }
-
-export function useI18n() {
-  const context = useContext(I18nContext);
-
-  if (!context) {
-    throw new Error("useI18n must be used within an I18nProvider");
-  }
-
-  return context;
-}
-  

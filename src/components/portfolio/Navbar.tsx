@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Code2, Languages } from "lucide-react";
-import { useI18n } from "@/i18n/I18nProvider";
+import { useI18n } from "@/i18n/useI18n";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);

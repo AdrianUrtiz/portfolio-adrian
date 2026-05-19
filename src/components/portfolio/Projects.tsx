@@ -1,7 +1,7 @@
 import { Section } from "./Section";
 import { ArrowUpRight } from "lucide-react";
 import { Github } from "@/components/Icons";
-import { useI18n } from "@/i18n/I18nProvider";
+import { useI18n } from "@/i18n/useI18n";
 
 export function Projects() {
   const { messages } = useI18n();

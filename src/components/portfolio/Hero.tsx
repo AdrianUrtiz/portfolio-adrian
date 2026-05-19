@@ -3,7 +3,7 @@ import { Github, Linkedin } from "@/components/Icons";
 import { Typing } from "@/components/Typing";
 import Badge from "@/components/Badge";
 import CodeCard from "@/components/CodeCard";
-import { useI18n } from "@/i18n/I18nProvider";
+import { useI18n } from "@/i18n/useI18n";
 
 export function Hero() {
   const { locale, messages } = useI18n();

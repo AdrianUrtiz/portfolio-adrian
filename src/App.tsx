@@ -9,7 +9,7 @@ import { Footer } from "@/components/portfolio/Footer";
 import { LanguageTransition } from "@/components/portfolio/LanguageTransition";
 import ButtonUp from "@/components/ButtonUp";
 import useComeBackTitle from "@/hooks/useComeBackTitle";
-import { useI18n } from "@/i18n/I18nProvider";
+import { useI18n } from "@/i18n/useI18n";
 
 function App() {
   const { isChangingLanguage, messages } = useI18n();

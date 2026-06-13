@@ -1,16 +1,17 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
-@import "@fontsource-variable/space-grotesk";
-@import "@fontsource-variable/inter";
-@import "@fontsource-variable/jetbrains-mono";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+  --font-display:
+    'Space Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -136,7 +137,7 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-feature-settings: "ss01", "cv11";
+    font-feature-settings: 'ss01', 'cv11';
     -webkit-font-smoothing: antialiased;
   }
   h1,
@@ -187,7 +188,7 @@
     position: relative;
   }
   .border-gradient::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     padding: 1px;
@@ -232,7 +233,11 @@
       oklch(0.92 0.02 180 / 0.22),
       transparent 35%
     ),
-    linear-gradient(180deg, oklch(0.05 0.01 220 / 0.92), oklch(0.1 0.02 190 / 0.96));
+    linear-gradient(
+      180deg,
+      oklch(0.05 0.01 220 / 0.92),
+      oklch(0.1 0.02 190 / 0.96)
+    );
   transition: opacity 180ms ease;
 }
 

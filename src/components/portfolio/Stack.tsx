@@ -1,30 +1,27 @@
-import { Section } from "@/components/portfolio/Section";
-import { useI18n } from "@/i18n/useI18n";
+import { Section } from '@/components/portfolio/Section'
+import { useI18n } from '@/i18n/useI18n'
 
 export function Stack() {
-  const { messages } = useI18n();
+  const { messages } = useI18n()
 
   return (
     <Section
-      id="stack"
+      id='stack'
       eyebrow={messages.stack.eyebrow}
-      title={messages.stack.title}
-    >
-      <div className="grid md:grid-cols-3 gap-5">
+      title={messages.stack.title}>
+      <div className='grid gap-5 md:grid-cols-3'>
         {messages.stack.groups.map((g) => (
           <div
             key={g.title}
-            className="border-gradient rounded-xl bg-card/60 backdrop-blur p-6 shadow-card"
-          >
-            <h3 className="text-sm font-mono uppercase tracking-widest text-primary mb-4">
+            className='border-gradient bg-card/60 shadow-card rounded-xl p-6 backdrop-blur'>
+            <h3 className='text-primary mb-4 font-mono text-sm tracking-widest uppercase'>
               {g.title}
             </h3>
-            <ul className="flex flex-wrap gap-2">
+            <ul className='flex flex-wrap gap-2'>
               {g.items.map((it) => (
                 <li
                   key={it}
-                  className="px-3 py-1.5 rounded-md bg-secondary/60 border border-border text-sm hover:border-primary/50 hover:text-primary transition-colors"
-                >
+                  className='bg-secondary/60 border-border hover:border-primary/50 hover:text-primary rounded-md border px-3 py-1.5 text-sm transition-colors'>
                   {it}
                 </li>
               ))}
@@ -33,5 +30,5 @@ export function Stack() {
         ))}
       </div>
     </Section>
-  );
+  )
 }

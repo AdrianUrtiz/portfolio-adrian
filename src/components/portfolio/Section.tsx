@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react'
 
 export function Section({
   id,
@@ -7,28 +7,28 @@ export function Section({
   description,
   children,
 }: {
-  id: string;
-  eyebrow: string;
-  title: string;
-  description?: string;
-  children: ReactNode;
+  id: string
+  eyebrow: string
+  title: string
+  description?: string
+  children: ReactNode
 }) {
   return (
-    <section id={id} className="relative py-24 sm:py-32">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="mb-12 max-w-2xl">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary">
+    <section id={id} className='relative py-24 sm:py-32'>
+      <div className='mx-auto max-w-6xl px-6'>
+        <div className='mb-12 max-w-2xl'>
+          <p className='text-primary font-mono text-xs tracking-[0.2em] uppercase'>
             {eyebrow}
           </p>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold">
+          <h2 className='mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl'>
             {title}
           </h2>
           {description && (
-            <p className="mt-4 text-muted-foreground text-lg">{description}</p>
+            <p className='text-muted-foreground mt-4 text-lg'>{description}</p>
           )}
         </div>
         {children}
       </div>
     </section>
-  );
+  )
 }

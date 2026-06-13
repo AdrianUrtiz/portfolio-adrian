@@ -9,11 +9,11 @@ import { Navbar } from '@/components/portfolio/Navbar'
 import { Projects } from '@/components/portfolio/Projects'
 import { Stack } from '@/components/portfolio/Stack'
 
-import useComeBackTitle from '@/hooks/useComeBackTitle'
+import { useComeBackTitle } from '@/hooks/useComeBackTitle'
 
 import { useI18n } from '@/i18n/useI18n'
 
-const App = () => {
+export const App = () => {
   const { isChangingLanguage, messages } = useI18n()
 
   useComeBackTitle(messages.comebackTitle)
@@ -35,5 +35,3 @@ const App = () => {
     </div>
   )
 }
-
-export default App

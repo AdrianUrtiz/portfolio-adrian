@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const useComeBackTitle = (blurTitle: string) => {
+export const useComeBackTitle = (blurTitle: string) => {
   useEffect(() => {
     const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)
     if (isMobile) return
@@ -24,5 +24,3 @@ const useComeBackTitle = (blurTitle: string) => {
     }
   }, [blurTitle])
 }
-
-export default useComeBackTitle

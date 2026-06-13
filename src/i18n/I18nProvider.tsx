@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import { messages, type Locale } from './messages'
+import { type ReactNode, useEffect, useMemo, useRef, useState } from 'react'
+
+import { type Locale, messages } from './messages'
 import { I18nContext } from './useI18n'
 
 const STORAGE_KEY = 'portfolio-locale'
 
-function getInitialLocale(): Locale {
+const getInitialLocale = (): Locale => {
   if (typeof window === 'undefined') return 'es'
 
   const savedLocale = window.localStorage.getItem(STORAGE_KEY)
@@ -13,7 +14,7 @@ function getInitialLocale(): Locale {
   return navigator.language.toLowerCase().startsWith('en') ? 'en' : 'es'
 }
 
-export function I18nProvider({ children }: { children: ReactNode }) {
+export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const [locale, setLocale] = useState<Locale>(getInitialLocale)
   const [isChangingLanguage, setIsChangingLanguage] = useState(false)
   const changeTimeoutRef = useRef<number | null>(null)
@@ -56,7 +57,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
       isChangingLanguage,
       messages: messages[locale],
     }),
-    [isChangingLanguage, locale]
+    [isChangingLanguage, locale],
   )
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>

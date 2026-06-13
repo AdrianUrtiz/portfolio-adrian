@@ -1,4 +1,5 @@
 import { createContext, useContext } from 'react'
+
 import { type Locale, type Messages } from './messages'
 
 export type I18nContextValue = {
@@ -11,7 +12,7 @@ export type I18nContextValue = {
 
 export const I18nContext = createContext<I18nContextValue | null>(null)
 
-export function useI18n() {
+export const useI18n = () => {
   const context = useContext(I18nContext)
 
   if (!context) {

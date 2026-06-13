@@ -1,78 +1,76 @@
 import { ArrowDown, FileDown, Mail, Sparkles } from 'lucide-react'
+
+import { Badge } from '@/components/Badge'
+import { CodeCard } from '@/components/CodeCard'
 import { Github, Linkedin } from '@/components/Icons'
 import { Typing } from '@/components/Typing'
-import Badge from '@/components/Badge'
-import CodeCard from '@/components/CodeCard'
+
 import { useI18n } from '@/i18n/useI18n'
 
-export function Hero() {
+export const Hero = () => {
   const { locale, messages } = useI18n()
 
   return (
-    <section
-      id='hero'
-      className='bg-hero relative flex min-h-screen items-center overflow-hidden'>
-      <div className='grid-bg absolute inset-0' aria-hidden />
-      <div className='relative mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pt-32 pb-20 lg:grid-cols-[1.3fr_1fr]'>
+    <section id="hero" className="bg-hero relative flex min-h-screen items-center overflow-hidden">
+      <div className="grid-bg absolute inset-0" aria-hidden />
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pt-32 pb-20 lg:grid-cols-[1.3fr_1fr]">
         <div>
-          <div className='mb-6 flex items-center gap-4 md:mb-12'>
+          <div className="mb-6 flex items-center gap-4 md:mb-12">
             <img
-              className='size-16 rounded-full md:size-20'
-              src='/adrian-queretaro.webp'
+              className="size-16 rounded-full md:size-20"
+              src="/adrian-queretaro.webp"
               alt={messages.hero.imageAlt}
             />
             <a
-              href='https://www.linkedin.com/in/adrian-urtiz-955aa0266/'
-              target='_blank'
-              rel='noopener noreferrer'>
+              href="https://www.linkedin.com/in/adrian-urtiz-955aa0266/"
+              target="_blank"
+              rel="noopener noreferrer">
               <Badge>{messages.hero.availability}</Badge>
             </a>
           </div>
-          <h1 className='font-display mt-6 text-3xl leading-[1.05] font-bold sm:text-5xl lg:text-6xl'>
+          <h1 className="font-display mt-6 text-3xl leading-[1.05] font-bold sm:text-5xl lg:text-6xl">
             {messages.hero.titlePrefix}
-            <span className='text-gradient'>
-              {messages.hero.titleHighlight}
-            </span>
+            <span className="text-gradient">{messages.hero.titleHighlight}</span>
           </h1>
           <Typing key={locale} />
-          <p className='text-muted-foreground mt-6 max-w-xl text-base md:text-lg'>
+          <p className="text-muted-foreground mt-6 max-w-xl text-base md:text-lg">
             {messages.hero.description}
           </p>
-          <div className='mt-8 flex flex-wrap items-center gap-3'>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href='#projects'
-              className='bg-primary text-primary-foreground hover:bg-primary-glow shadow-glow inline-flex items-center gap-2 rounded-md px-5 py-3 text-sm font-medium transition-colors'>
-              <Sparkles className='size-4' /> {messages.hero.primaryCta}
+              href="#projects"
+              className="bg-primary text-primary-foreground hover:bg-primary-glow shadow-glow inline-flex items-center gap-2 rounded-md px-5 py-3 text-sm font-medium transition-colors">
+              <Sparkles className="size-4" /> {messages.hero.primaryCta}
             </a>
             <a
               href={messages.hero.resumeHref}
-              className='border-border bg-card/40 hover:bg-secondary inline-flex items-center gap-2 rounded-md border px-5 py-3 text-sm font-medium transition-colors'
+              className="border-border bg-card/40 hover:bg-secondary inline-flex items-center gap-2 rounded-md border px-5 py-3 text-sm font-medium transition-colors"
               download>
-              <FileDown className='size-4' /> {messages.hero.resumeCta}
+              <FileDown className="size-4" /> {messages.hero.resumeCta}
             </a>
           </div>
-          <div className='text-muted-foreground mt-10 flex items-center gap-4'>
+          <div className="text-muted-foreground mt-10 flex items-center gap-4">
             <a
-              aria-label='GitHub'
-              href='https://github.com/AdrianUrtiz'
-              className='hover:text-foreground transition-colors'
-              target='_blank'
-              rel='noopener noreferrer'>
-              <Github className='size-5' />
+              aria-label="GitHub"
+              href="https://github.com/AdrianUrtiz"
+              className="hover:text-foreground transition-colors"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Github className="size-5" />
             </a>
             <a
-              aria-label='LinkedIn'
-              href='https://www.linkedin.com/in/adrian-urtiz-955aa0266/'
-              className='hover:text-foreground transition-colors'
-              target='_blank'
-              rel='noopener noreferrer'>
-              <Linkedin className='size-5' />
+              aria-label="LinkedIn"
+              href="https://www.linkedin.com/in/adrian-urtiz-955aa0266/"
+              className="hover:text-foreground transition-colors"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Linkedin className="size-5" />
             </a>
             <a
-              aria-label='Email'
-              href='mailto: aeurtiz17@gmail.com'
-              className='hover:text-foreground transition-colors'>
-              <Mail className='size-5' />
+              aria-label="Email"
+              href="mailto: aeurtiz17@gmail.com"
+              className="hover:text-foreground transition-colors">
+              <Mail className="size-5" />
             </a>
           </div>
         </div>
@@ -81,10 +79,10 @@ export function Hero() {
         <CodeCard />
       </div>
       <a
-        href='#stack'
-        className='text-muted-foreground hover:text-foreground absolute bottom-6 left-1/2 -translate-x-1/2 transition-colors'
+        href="#stack"
+        className="text-muted-foreground hover:text-foreground absolute bottom-6 left-1/2 -translate-x-1/2 transition-colors"
         aria-label={messages.hero.scrollAriaLabel}>
-        <ArrowDown className='size-4 animate-bounce md:size-6' />
+        <ArrowDown className="size-4 animate-bounce md:size-6" />
       </a>
     </section>
   )

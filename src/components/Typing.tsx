@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
+
 import { useI18n } from '@/i18n/useI18n'
 
-export function Typing() {
+export const Typing = () => {
   const { messages } = useI18n()
   const roles = messages.hero.roles
   const [roleIndex, setRoleIndex] = useState(0)
@@ -19,10 +20,7 @@ export function Typing() {
       if (displayed.length < current.length) {
         const char = current[displayed.length]
         const delay = char === ' ' ? 50 : 70 + Math.random() * 40
-        timeout = setTimeout(
-          () => setDisplayed(current.slice(0, displayed.length + 1)),
-          delay
-        )
+        timeout = setTimeout(() => setDisplayed(current.slice(0, displayed.length + 1)), delay)
       } else {
         timeout = setTimeout(() => setWaiting(true), 2000)
       }
@@ -51,7 +49,7 @@ export function Typing() {
   }, [waiting])
 
   return (
-    <div className='text-foreground my-3 flex h-10 items-center justify-start gap-2 text-xl font-medium md:text-2xl'>
+    <div className="text-foreground my-3 flex h-10 items-center justify-start gap-2 text-xl font-medium md:text-2xl">
       <span>{displayed}</span>
       <span
         className={`bg-primary inline-block h-7 w-0.5 transition-opacity duration-300 ${

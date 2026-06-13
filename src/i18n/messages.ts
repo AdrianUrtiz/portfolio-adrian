@@ -69,16 +69,7 @@ export const messages = {
         },
         {
           title: 'Backend',
-          items: [
-            'NestJS',
-            'Express',
-            'PHP',
-            'PostgreSQL',
-            'Prisma',
-            'MySQL',
-            'REST',
-            'Symfony',
-          ],
+          items: ['NestJS', 'Express', 'PHP', 'PostgreSQL', 'Prisma', 'MySQL', 'REST', 'Symfony'],
         },
         {
           title: 'Herramientas',
@@ -274,16 +265,7 @@ export const messages = {
         },
         {
           title: 'Backend',
-          items: [
-            'NestJS',
-            'Express',
-            'PHP',
-            'PostgreSQL',
-            'Prisma',
-            'MySQL',
-            'REST',
-            'Symfony',
-          ],
+          items: ['NestJS', 'Express', 'PHP', 'PostgreSQL', 'Prisma', 'MySQL', 'REST', 'Symfony'],
         },
         {
           title: 'Tools',
